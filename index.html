@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <!-- slick cdn -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <!-- font-awesome위치 상관없음 -->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main">
+            <div class="your-class">
+                <div class="s1">
+                    <video autoplay muted controls
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86157/86157_211242_1200_128_960_540.mp4"></video>
+                    <!-- 음소거 해야 자동재생됨 -->
+                </div>
+                <div class="s2">
+                    <video autoplay muted
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/83203/83203_211194_1200_128_960_540.mp4"></video>
+
+                </div>
+                <div class="s3">
+                    <video autoplay muted
+                        src="http://h.vod.cgv.co.kr:80/vodCGVa/86072/86072_211327_1200_128_960_540.mp4"></video>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- jquery Cdn 1X -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- slick cdn맨위 -->
+    <script>
+        $(document).ready(function () {
+            $('.your-class').slick({
+                autoplay:true,
+                dots:true,
+                fade:true
+            });
+        });
+    </script>
+</body>
+
+</html>
